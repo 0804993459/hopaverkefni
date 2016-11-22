@@ -1,0 +1,84 @@
+/*############################----body----#########################################*/
+body{	
+	display: flex;
+	flex-flow: row wrap;
+  	margin: 0 auto;
+	padding:0;
+	background-color: #adad85;
+}
+header,footer,nav{
+	width: 100%;
+}
+
+/*############################----nav----#########################################*/
+nav{
+	position: fixed;
+	top: 0em;
+	height: 2em;
+
+	order: 6;
+	text-align: center;
+	flex-flow: column wrap;
+	background-color: #001a00
+	}
+
+	 nav a{
+
+
+		text-decoration: none;
+		font-weight: bold;
+		padding: 0.5em;
+		border: solid;
+		border-color:#1aff1a;
+		font-size: 80%;
+		border-bottom: 5px;
+
+
+		display: flex;
+		flex-flow: column wrap;
+	}
+	nav ul{
+		
+		margin: 0px;
+		padding: 0px;
+	}
+	nav li{
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+	}
+	.v1,.v2,.v3,.v4{
+	background-color:#001a00;
+	color:#1aff1a;
+}
+@media screen and (min-width: 30em){ /*iphone 6 landscape*/
+
+}
+@media screen and (min-width: 48em){ /*ipad upright*/ 
+
+	}
+	nav ul{
+		max-width:60em;
+		top: 0em;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	nav ul{
+		display: flex;
+	}
+	}
+	nav{
+		justify-content: center;
+		max-width:60em;
+		position: fixed;
+		top: 0em;
+		order: 1;	
+	}
+
+}
+@media screen and (min-width: 60em){ /*pc screen*/
+
+}
+
