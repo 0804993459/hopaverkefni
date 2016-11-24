@@ -16,5 +16,20 @@ namespace Reiknivél
         {
             InitializeComponent();
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
