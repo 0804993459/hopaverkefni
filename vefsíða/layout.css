@@ -5,9 +5,20 @@ body {
     padding: 0;
     background-color: #adad85;
     font-family: Roboto;
-}
-nav{width: 100%;}
+    background-image: url('tree.jpg');
+    background-repeat: repeat;
 
+}
+header,nav{width: 100%;}
+
+header{
+	margin-top: 50em;
+	order:2;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+}
 
 #toggle{
 	display: none;
@@ -18,7 +29,6 @@ label{
 nav{
 	justify-content: flex-end;
 	display: flex;
-
 	order: 1;
 	position: fixed;
 	background-color: #0d0d0d;
