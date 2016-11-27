@@ -6,7 +6,8 @@ body {
     background-color: #adad85;
     font-family: Roboto;
     background-image: url('tree.jpg');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 header,nav{width: 100%;}
@@ -27,19 +28,22 @@ label{
 
 }
 nav{
+	opacity: 0.93;
 	justify-content: flex-end;
 	display: flex;
 	order: 1;
 	position: fixed;
 	background-color: #0d0d0d;
 	color: white;
+	transition-duration: 1s;
 }
 nav ul{
-	display: flex;
+		display: flex;
 	list-style-type:none;
 	flex-flow: row wrap;
 }
 nav li{
+	
 	padding: 1em;
 	transition-duration: 1s;
 }
@@ -47,6 +51,9 @@ nav li:hover{
 	background-color: #262626;
 	padding-right: 2em;
 }
+
+header:hover nav{opacity: 1;}
+
 @media screen and (min-width: 30em)  {
 
 }
