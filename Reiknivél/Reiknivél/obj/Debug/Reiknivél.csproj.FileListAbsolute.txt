@@ -1,2 +1,10 @@
 C:\Users\0510942049\hopaverkefni\Reiknivél\Reiknivél\bin\Debug\Reiknivél.exe.config
 H:\hopaverkefni\Reiknivél\Reiknivél\bin\Debug\Reiknivél.exe.config
+H:\hopaverkefni\Reiknivél\Reiknivél\bin\Debug\Reiknivél.exe
+H:\hopaverkefni\Reiknivél\Reiknivél\bin\Debug\Reiknivél.pdb
+H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.csprojResolveAssemblyReference.cache
+H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.Form1.resources
+H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.Properties.Resources.resources
+H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.csproj.GenerateResource.Cache
+H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.exe
+H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.pdb
