@@ -4,13 +4,14 @@ body {
     margin: 0 auto;
     padding: 0;
     background-color: #adad85;
-    font-family: Roboto;
     background-image: url('tree.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
-header,nav{width: 100%;}
+header,footer,nav{width: 100%;}
+
+
 
 header{
 	margin-top: 50em;
@@ -19,7 +20,53 @@ header{
 	flex-flow: column wrap;
 	background-color: #0d0d0d;
 	color: white;
+	text-align: center;
+	border-bottom: 2em solid #0d0d0d;
 }
+
+.alpha{
+
+	width: 33%;
+
+	order:3;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+.bravo{
+	width: 33%;
+
+	order:5;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+.charlie{
+	order:4;
+	display: flex;
+	width: 34%;
+	background-color: #0d0d0d;
+}
+img{
+	border: 1em;
+	display: flex;
+	width: 100%;
+}
+footer{
+
+	padding-top: 3em;
+	order:6;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #0d0d0d;
+	color: white;
+	padding-left: 2em;
+}
+
 
 #toggle{
 	display: none;
@@ -46,13 +93,15 @@ nav li{
 	
 	padding: 1em;
 	transition-duration: 1s;
+	border-bottom: 1px solid #0d0d0d;
 }
 nav li:hover{
-	background-color: #262626;
+	border-bottom: 1px solid #808080;
+	background-color: #1a1a1a;
 	padding-right: 2em;
 }
 
-header:hover nav{opacity: 1;}
+nav:hover{opacity: 1;}
 
 @media screen and (min-width: 30em)  {
 
