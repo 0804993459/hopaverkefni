@@ -23,6 +23,20 @@ header{
 	text-align: center;
 	border-bottom: 2em solid #0d0d0d;
 }
+.alpha a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+
+}
+.alpha a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
 
 .alpha{
 
