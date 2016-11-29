@@ -21,24 +21,11 @@ header{
 	background-color: #0d0d0d;
 	color: white;
 	text-align: center;
-	border-bottom: 2em solid #0d0d0d;
+	border-bottom: 10em solid #0d0d0d;
+	border-top: 2em solid #0d0d0d;
 }
-.alpha a{
-	font-size: 1.5em;
-	transition-duration: 1s;
-	text-decoration: none;
-	color: white;
-	border-bottom: 1px solid #0d0d0d;
-	border-top: 1px solid #0d0d0d;
-
-}
-.alpha a:hover{
-	border-bottom: 1px solid #808080;
-	border-top: 1px solid #808080;
-	background-color: #1a1a1a;
-}
-
 .alpha{
+	padding-bottom: 3em;
 
 	width: 33%;
 
@@ -49,7 +36,21 @@ header{
 	color: white;
 	text-align: center;
 }
+.alpha a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+.alpha a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
 .bravo{
+	padding-bottom: 3em;
 	width: 33%;
 
 	order:5;
@@ -59,11 +60,25 @@ header{
 	color: white;
 	text-align: center;
 }
+.bravo a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+.bravo a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
 .charlie{
 	order:4;
 	display: flex;
 	width: 34%;
 	background-color: #0d0d0d;
+	padding-bottom: 3em;
 }
 img{
 	border: 1em;
@@ -71,8 +86,9 @@ img{
 	width: 100%;
 }
 footer{
-
-	padding-top: 3em;
+	border-top: 1px solid #808080;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	order:6;
 	display: flex;
 	flex-flow: row wrap;
