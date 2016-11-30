@@ -7,5 +7,3 @@ H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.Properties.Resources.
 H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.csproj.GenerateResource.Cache
 H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.exe
 H:\hopaverkefni\Reiknivél\Reiknivél\obj\Debug\Reiknivél.pdb
-H:\hopaverkefni\Reiknivél\Reiknivél\bin\Debug\Reiknivél.exe.CodeAnalysisLog.xml
-H:\hopaverkefni\Reiknivél\Reiknivél\bin\Debug\Reiknivél.exe.lastcodeanalysissucceeded

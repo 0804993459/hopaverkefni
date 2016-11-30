@@ -84,6 +84,7 @@
             this.btMminus.TabIndex = 2;
             this.btMminus.Text = "M-";
             this.btMminus.UseVisualStyleBackColor = true;
+            this.btMminus.Click += new System.EventHandler(this.btMminus_Click);
             // 
             // btMresult
             // 
@@ -93,6 +94,7 @@
             this.btMresult.TabIndex = 3;
             this.btMresult.Text = "MR";
             this.btMresult.UseVisualStyleBackColor = true;
+            this.btMresult.Click += new System.EventHandler(this.btMresult_Click);
             // 
             // btDel
             // 
@@ -306,7 +308,7 @@
             // 
             this.btReikna.Location = new System.Drawing.Point(287, 180);
             this.btReikna.Name = "btReikna";
-            this.btReikna.Size = new System.Drawing.Size(52, 141);
+            this.btReikna.Size = new System.Drawing.Size(121, 141);
             this.btReikna.TabIndex = 25;
             this.btReikna.Text = "=";
             this.btReikna.UseVisualStyleBackColor = true;

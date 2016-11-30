@@ -222,6 +222,16 @@ namespace Reiknivél
 
         }
 
+        private void btMminus_Click(object sender, EventArgs e)
+        {
+            memorie = memorie - Convert.ToDouble(input);
+        }
+
+        private void btMresult_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
 
         
