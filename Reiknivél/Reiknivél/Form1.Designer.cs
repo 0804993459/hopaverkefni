@@ -154,6 +154,7 @@
             this.btKomma.TabIndex = 9;
             this.btKomma.Text = ",";
             this.btKomma.UseVisualStyleBackColor = true;
+            this.btKomma.Click += new System.EventHandler(this.btKomma_Click);
             // 
             // btProsent
             // 

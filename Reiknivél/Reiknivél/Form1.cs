@@ -108,6 +108,12 @@ namespace Reiknivél
             
         }
 
+        private void btKomma_Click(object sender, EventArgs e)
+        {
+            rtbUtskrá.Text += ",";
+            input += ",";
+        }
+
         private void btReikna_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Clear();
@@ -232,6 +238,7 @@ namespace Reiknivél
             rtbUtskrá.Clear();
             rtbUtskrá.Text = memorie.ToString();
         }
+
 
         
 
