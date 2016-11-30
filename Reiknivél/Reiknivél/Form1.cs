@@ -229,7 +229,8 @@ namespace Reiknivél
 
         private void btMresult_Click(object sender, EventArgs e)
         {
-
+            rtbUtskrá.Clear();
+            rtbUtskrá.Text = memorie.ToString();
         }
 
         
