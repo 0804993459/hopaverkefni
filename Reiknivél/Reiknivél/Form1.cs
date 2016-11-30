@@ -22,6 +22,7 @@ namespace Reiknivél
         string adferd = null;
         double Reikning = 0;
         double tala1 = 0, tala2 = 0;
+        double memorie = 0;
         private void bt1_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Text += "1";
@@ -213,6 +214,12 @@ namespace Reiknivél
             double.TryParse(firsthluta, out tala1);
             Reikning = tala1 * tala1;
             rtbUtskrá.Text = Reikning.ToString();
+        }
+
+        private void btMplus_Click(object sender, EventArgs e)
+        {
+            memorie = memorie + Convert.ToDouble(input);
+
         }
 
         

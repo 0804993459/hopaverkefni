@@ -74,6 +74,7 @@
             this.btMplus.TabIndex = 1;
             this.btMplus.Text = "M+";
             this.btMplus.UseVisualStyleBackColor = true;
+            this.btMplus.Click += new System.EventHandler(this.btMplus_Click);
             // 
             // btMminus
             // 
