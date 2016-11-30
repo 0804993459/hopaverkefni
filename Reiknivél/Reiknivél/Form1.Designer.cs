@@ -308,7 +308,7 @@
             // 
             this.btReikna.Location = new System.Drawing.Point(287, 180);
             this.btReikna.Name = "btReikna";
-            this.btReikna.Size = new System.Drawing.Size(121, 141);
+            this.btReikna.Size = new System.Drawing.Size(52, 141);
             this.btReikna.TabIndex = 25;
             this.btReikna.Text = "=";
             this.btReikna.UseVisualStyleBackColor = true;
