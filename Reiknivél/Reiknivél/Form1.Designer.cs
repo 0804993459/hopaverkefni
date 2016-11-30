@@ -54,10 +54,12 @@
             this.btPlus = new System.Windows.Forms.Button();
             this.btMinus = new System.Windows.Forms.Button();
             this.btReikna = new System.Windows.Forms.Button();
+            this.bt0 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtbUtskrá
             // 
+            this.rtbUtskrá.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbUtskrá.Location = new System.Drawing.Point(28, 12);
             this.rtbUtskrá.Name = "rtbUtskrá";
             this.rtbUtskrá.Size = new System.Drawing.Size(342, 64);
@@ -309,11 +311,22 @@
             this.btReikna.UseVisualStyleBackColor = true;
             this.btReikna.Click += new System.EventHandler(this.btReikna_Click);
             // 
+            // bt0
+            // 
+            this.bt0.Location = new System.Drawing.Point(55, 327);
+            this.bt0.Name = "bt0";
+            this.bt0.Size = new System.Drawing.Size(168, 43);
+            this.bt0.TabIndex = 26;
+            this.bt0.Text = "0";
+            this.bt0.UseVisualStyleBackColor = true;
+            this.bt0.Click += new System.EventHandler(this.bt0_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(420, 391);
+            this.Controls.Add(this.bt0);
             this.Controls.Add(this.btReikna);
             this.Controls.Add(this.btMinus);
             this.Controls.Add(this.btPlus);
@@ -374,6 +387,7 @@
         private System.Windows.Forms.Button btPlus;
         private System.Windows.Forms.Button btMinus;
         private System.Windows.Forms.Button btReikna;
+        private System.Windows.Forms.Button bt0;
     }
 }
 

@@ -74,6 +74,11 @@ namespace Reiknivél
             rtbUtskrá.Text += "9";
             input += "9";
         }
+        private void bt0_Click(object sender, EventArgs e)
+        {
+            rtbUtskrá.Text += "0";
+            input += "0";
+        }
         private void btC_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Clear();
@@ -84,12 +89,13 @@ namespace Reiknivél
 
         private void btDel_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btCE_Click(object sender, EventArgs e)
         {
-
+            rtbUtskrá.Clear();
+            input = null;
         }
 
         private void btPlus_Click(object sender, EventArgs e)
@@ -208,6 +214,8 @@ namespace Reiknivél
             Reikning = tala1 * tala1;
             rtbUtskrá.Text = Reikning.ToString();
         }
+
+        
 
         
 
