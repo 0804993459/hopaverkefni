@@ -23,6 +23,7 @@ namespace Reiknivél
         double Reikning = 0;
         double tala1 = 0, tala2 = 0;
         double memorie = 0;
+        string tempdel = null;
         private void bt1_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Text += "1";
@@ -90,7 +91,10 @@ namespace Reiknivél
 
         private void btDel_Click(object sender, EventArgs e)
         {
-            
+            tempdel = input.Substring(0, (input.Length - 1));
+            input = tempdel;
+            rtbUtskrá.Clear();
+            rtbUtskrá.Text = input;
         }
 
         private void btCE_Click(object sender, EventArgs e)
