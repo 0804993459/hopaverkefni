@@ -26,9 +26,7 @@ header{
 }
 .alpha{
 	padding-bottom: 3em;
-
-	width: 33%;
-
+	width: 100%;
 	order:3;
 	display: flex;
 	flex-flow: column wrap;
@@ -51,7 +49,7 @@ header{
 }
 .bravo{
 	padding-bottom: 3em;
-	width: 33%;
+	width: 100%;
 
 	order:5;
 	display: flex;
@@ -76,7 +74,7 @@ header{
 .charlie{
 	order:4;
 	display: flex;
-	width: 34%;
+	width: 100%;
 	background-color: #0d0d0d;
 	padding-bottom: 3em;
 }
@@ -91,10 +89,23 @@ footer{
 	padding-bottom: 1em;
 	order:6;
 	display: flex;
-	flex-flow: row wrap;
-	background-color: #0d0d0d;
+	flex-flow: column wrap;
+	background-color: #1a1a1a;
 	color: white;
-	padding-left: 2em;
+	text-align: center;
+}
+footer a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #1a1a1a;
+	border-top: 1px solid #1a1a1a;
+}
+footer a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
 }
 
 
@@ -105,7 +116,6 @@ label{
 
 }
 nav{
-	opacity: 0.93;
 	justify-content: flex-end;
 	display: flex;
 	order: 1;
@@ -131,7 +141,7 @@ nav li:hover{
 	padding-right: 2em;
 }
 
-nav:hover{opacity: 1;}
+
 
 @media screen and (min-width: 30em)  {
 
@@ -141,7 +151,31 @@ nav:hover{opacity: 1;}
 	nav{
 	justify-content: flex-start;
 }
+.alpha{
+	order:4;
+	width: 50%;
+}
+.bravo{
+	order:5;
+	width: 50%;
+}
+.charlie{
+	order:3;
+}
 }
 @media screen and (min-width: 60em)  {
-	
+.alpha{
+	order:3;
+	width: 33%;
+}
+.bravo{
+	width: 33%;
+}
+.charlie{
+	order:4;
+	width:34%;
+}
+nav{
+	opacity: 0.93;}
+nav:hover{opacity: 1;}
 }
