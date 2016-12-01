@@ -110,13 +110,21 @@ footer a:hover{
 
 
 #toggle{
-	display: none;
+display: none;
 }
 label{
-
+	position: fixed;
+	display: flex;
+	order: 1;
+	background-color: #0d0d0d;
+	color: white;
+	width: 100%;
+	padding: 2em;
 }
 nav{
+	top: -20em;
 	justify-content: flex-end;
+	overflow: hidden;
 	display: flex;
 	order: 1;
 	position: fixed;
@@ -125,7 +133,7 @@ nav{
 	transition-duration: 1s;
 }
 nav ul{
-		display: flex;
+	display: flex;
 	list-style-type:none;
 	flex-flow: row wrap;
 }
@@ -135,11 +143,9 @@ nav li{
 	transition-duration: 1s;
 	border-bottom: 1px solid #0d0d0d;
 }
-nav li:hover{
-	border-bottom: 1px solid #808080;
-	background-color: #1a1a1a;
-	padding-right: 2em;
-}
+input:checked ~ nav{
+	top: 5em;
+	}
 
 
 
@@ -147,9 +153,18 @@ nav li:hover{
 
 }
 @media screen and (min-width: 48em)  {
-	label{display: none}
-	nav{
+
+label{display: none}
+
+nav{
+	top: 0em;
 	justify-content: flex-start;
+}
+nav li{	
+flex-flow: row wrap;
+}
+nav ul{
+	width: 100%;
 }
 .alpha{
 	order:4;
@@ -177,5 +192,11 @@ nav li:hover{
 }
 nav{
 	opacity: 0.93;}
+nav li:hover{
+	border-bottom: 1px solid #808080;
+	background-color: #1a1a1a;
+	padding-right: 2em;
+}
+
 nav:hover{opacity: 1;}
 }
