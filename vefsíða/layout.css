@@ -14,7 +14,7 @@ header,footer,nav{width: 100%;}
 
 
 header{
-	margin-top: 50em;
+	margin-top: 20em;
 	order:2;
 	display: flex;
 	flex-flow: column wrap;
@@ -153,7 +153,9 @@ input:checked ~ nav{
 
 }
 @media screen and (min-width: 48em)  {
-
+header{
+	margin-top: 50em;
+}
 label{display: none}
 
 nav{
