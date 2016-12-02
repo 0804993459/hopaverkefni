@@ -17,18 +17,23 @@ namespace Reiknivél
         {
             InitializeComponent();
         }
-        string input = null;
-        string firsthluta = null;
-        string seinnihluta = null;
-        string adferd = null;
-        double Reikning = 0;
-        double tala1 = 0, tala2 = 0;
-        double memorie = 0;
-        string tempdel = null;
+        //--------------------
+        string input = null; //Geymir það sem er skrifað inn í reiknivelinn
+        string firsthluta = null; //Til að geymir það sem er skrifað fyrst inn í reiknivelinn áður en það er valið aðferð.
+        string seinnihluta = null; // -||- nema það geymir seinni
+        string adferd = null; //Til að velja adferð sem reiknivelinn notar
+        //---------------------
+        double Reikning = 0; //Reiknir saman firsthluta og seinnihluta
+        double tala1 = 0, tala2 = 0; //tala1 og tala2 notaðir til að breyta string firsthluta og seinnihluta í double tölur
+        double memorie = 0; //Fyrir M+,M- og MR takkarnir
+        string tempdel = null; //Til að bakka ein tala í reiknivelin
+        //---------------------
+        //Virkja Alla Takkanir(Allir með nokkuð eins skipanir)
         private void bt1_Click(object sender, EventArgs e)
         {
-            rtbUtskrá.Text += "1";
-            input += "1";
+            
+            rtbUtskrá.Text += "1";  //Synir 1 á skjárinn
+            input += "1";   //Geymir 1(þegar það er ýtt á 1) í input
             
         }
         private void bt2_Click(object sender, EventArgs e)
@@ -82,34 +87,36 @@ namespace Reiknivél
             rtbUtskrá.Text += "0";
             input += "0";
         }
+        //-------------------------------
+        //btC: Til að nulla allt til að endursetja reiknivelinn
         private void btC_Click(object sender, EventArgs e)
         {
-            rtbUtskrá.Clear();
-            input = null;
-            firsthluta = null;
-            seinnihluta = null;
+            rtbUtskrá.Clear(); //Clearar Skjárinn
+            input = null; //Nullar inputið
+            firsthluta = null; //Nullar firsthluta
+            seinnihluta = null; //Nullar seinnihluta
         }
-
+        //btDEL: Til að fara til um ein í reiknivelinn
         private void btDel_Click(object sender, EventArgs e)
         {
-            tempdel = input.Substring(0, (input.Length - 1));
-            input = tempdel;
-            rtbUtskrá.Clear();
-            rtbUtskrá.Text = input;
+            tempdel = input.Substring(0, (input.Length - 1)); //tekur inn inputið og tekur í burtu ein
+            input = tempdel; //Tekur tempdel og færi það yfir í input
+            rtbUtskrá.Clear(); //Clearar Skjárinn
+            rtbUtskrá.Text = input; //Sýnir inputið á skjárinn
         }
-
+        //btCE: Clearar skjárinn og inputið
         private void btCE_Click(object sender, EventArgs e)
         {
-            rtbUtskrá.Clear();
-            input = null;
+            rtbUtskrá.Clear(); //Clearar skjárinn
+            input = null; //nullar/Clearar inputið
         }
-
+        //btPlus: Virka Aðferðinn +
         private void btPlus_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Clear();
-            firsthluta = input;
-            input = null;
-            adferd = "+";
+            firsthluta = input; //geymir inputið í firsthluta
+            input = null; //Nullar inputið
+            adferd = "+"; //Gefur adferd +
             
         }
 
@@ -118,25 +125,25 @@ namespace Reiknivél
             rtbUtskrá.Text += ",";
             input += ",";
         }
-
+        //btReina: Reiknir saman firsthluta og seinnihluta og sýnir það á skjárinn
         private void btReikna_Click(object sender, EventArgs e)
         {
-            rtbUtskrá.Clear();
-            seinnihluta = input;
-            input = null;
-            double.TryParse(firsthluta, out tala1);
-            double.TryParse(seinnihluta, out tala2);
-            if (adferd == "+")
+            rtbUtskrá.Clear(); //Clearar skjárinn
+            seinnihluta = input; //Geymir inputið í seinnihluta
+            input = null; // nullar inputið
+            double.TryParse(firsthluta, out tala1); //breytir firsthluta(string) í tala1(double)
+            double.TryParse(seinnihluta, out tala2); //breytir seinnihluta(string) í tala2(double)
+            if (adferd == "+") //Skoðar ef aðferðinn er +
             {
-                if (tala2 == 0)
+                if (tala2 == 0)//Virkar ekki
                 {
                     Reikning = Reikning + tala1;
                     rtbUtskrá.Text = Reikning.ToString();
                 }
-                else
+                else//Virkar
                 {
-                    Reikning = tala1 + tala2;
-                    rtbUtskrá.Text = Reikning.ToString();
+                    Reikning = tala1 + tala2; //Reiknir saman tala1 og tala 2
+                    rtbUtskrá.Text = Reikning.ToString(); //Sýnir á skjárinn
 
                 }
                 
@@ -175,7 +182,8 @@ namespace Reiknivél
             //seinnihluta = null;
             //firsthluta = null;
         }
-
+        //----------------------
+        //Geri það sama og btPlus nema með annar adferd
         private void btMinus_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Clear();
@@ -215,7 +223,8 @@ namespace Reiknivél
             input = null;
             adferd = "x^x";
         }
-
+        //-------------------------------
+        //btX: notar bara firsthluta til að reyna talan í öðru veldi
         private void btXiordu_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Clear();
@@ -230,7 +239,6 @@ namespace Reiknivél
         private void btMplus_Click(object sender, EventArgs e)
         {
             memorie = memorie + Convert.ToDouble(input);
-
         }
 
         private void btMminus_Click(object sender, EventArgs e)
@@ -243,30 +251,31 @@ namespace Reiknivél
             rtbUtskrá.Clear();
             rtbUtskrá.Text = memorie.ToString();
         }
-
+        //btSkraitextaskra: skrái inn i textaskra
         private void btSkraitextaskra_Click(object sender, EventArgs e)
         {
-            try
+            try//Reynir aðferð
             {
-                StreamWriter skrifari = File.AppendText("Textskra.txt");
-                skrifari.WriteLine(firsthluta + " " + adferd + " " + seinnihluta + " = " + Reikning);
-                skrifari.Close();
+                StreamWriter skrifari = File.AppendText("Textskra.txt"); //opnar skráinn til að breyta í honum
+                skrifari.WriteLine(firsthluta + " " + adferd + " " + seinnihluta + " = " + Reikning); //setur inn firsthluta,adferd,seinnihluta og reikninginn inn
+                skrifari.Close(); //lokar skráinn
             }
-            catch (Exception ex)
+            catch (Exception ex) //ef það virkar ekki
             {
                 MessageBox.Show("Ekki tókst að opna skránna" + ex);
             }
         }
-
+        //deletear txt skrá og býr til nýan þegar það er kveikt á verkefni
         private void Form1_Load(object sender, EventArgs e)
         {
-            File.Delete("Textskra.txt");
-            BuaTilSkra();
+            File.Delete("Textskra.txt");//Deletar txt skráinn
+            BuaTilSkra(); //Býr til nýan skrá
         }
+        //aðferðinn buatilskra
         private void BuaTilSkra()
         {
-            StreamWriter Skrifari = new StreamWriter("Textskra.txt");
-            Skrifari.Close();
+            StreamWriter Skrifari = new StreamWriter("Textskra.txt");//Býr til textskra.txt
+            Skrifari.Close(); //lokar skrifarinn
         }
 
         
