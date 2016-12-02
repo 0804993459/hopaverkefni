@@ -14,12 +14,13 @@ img{
 	border: 1em;
 	display: flex;
 	width: 100%;
+	height: auto;
 }
 footer{
 	border-top: 1px solid #808080;
 	padding-top: 1em;
 	padding-bottom: 1em;
-	order:6;
+	order:7;
 	display: flex;
 	flex-flow: column wrap;
 	background-color: #1a1a1a;
@@ -180,7 +181,77 @@ header a:hover{
 	padding-left: 10em;
 	width: 50%;
 }
+/*##################gluggar á okkur siðu#####################*/
+.echo{
+	padding-bottom: 3em;
+	width: 50%;
 
+	order:3;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+.echo a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+.echo a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
+.foxtrot{
+	padding-bottom: 3em;
+	width: 50%;
+
+	order:6;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+.foxtrot a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+.foxtrot a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
+.golf{
+	padding-bottom: 3em;
+	width: 50%;
+
+	order:4;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+.hotel{
+	padding-bottom: 25em;
+	width: 50%;
+
+	order:5;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
 /*##################stærðar breytingar#####################*/
 @media screen and (min-width: 30em)  {
 
