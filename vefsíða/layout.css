@@ -1,3 +1,4 @@
+/*##################Á öllu#####################*/
 body {
     display: flex;
     flex-flow: row wrap;
@@ -9,100 +10,6 @@ body {
     background-attachment: fixed;
 }
 header,footer,nav{width: 100%;}
-
-
-
-header{
-	margin-top: 20em;
-	order:2;
-	display: flex;
-	flex-flow: column wrap;
-	background-color: #0d0d0d;
-	color: white;
-	text-align: center;
-	border-bottom: 10em solid #0d0d0d;
-	border-top: 2em solid #0d0d0d;
-}
-header a{
-	font-size: 1.5em;
-	transition-duration: 1s;
-	text-decoration: none;
-	color: white;
-	border-bottom: 1px solid #0d0d0d;
-	border-top: 1px solid #0d0d0d;
-}
-header a:hover{
-	border-bottom: 1px solid #808080;
-	border-top: 1px solid #808080;
-	background-color: #1a1a1a;
-}
-.alpha{
-	padding-bottom: 3em;
-	width: 100%;
-	order:3;
-	display: flex;
-	flex-flow: column wrap;
-	background-color: #0d0d0d;
-	color: white;
-	text-align: center;
-}
-.alpha a{
-	font-size: 1.5em;
-	transition-duration: 1s;
-	text-decoration: none;
-	color: white;
-	border-bottom: 1px solid #0d0d0d;
-	border-top: 1px solid #0d0d0d;
-}
-.alpha a:hover{
-	border-bottom: 1px solid #808080;
-	border-top: 1px solid #808080;
-	background-color: #1a1a1a;
-}
-.bravo{
-	padding-bottom: 3em;
-	width: 100%;
-
-	order:5;
-	display: flex;
-	flex-flow: column wrap;
-	background-color: #0d0d0d;
-	color: white;
-	text-align: center;
-}
-.bravo a{
-	font-size: 1.5em;
-	transition-duration: 1s;
-	text-decoration: none;
-	color: white;
-	border-bottom: 1px solid #0d0d0d;
-	border-top: 1px solid #0d0d0d;
-}
-.bravo a:hover{
-	border-bottom: 1px solid #808080;
-	border-top: 1px solid #808080;
-	background-color: #1a1a1a;
-}
-.charlie{
-	order:4;
-	display: flex;
-	width: 100%;
-	background-color: #0d0d0d;
-	padding-bottom: 3em;
-}
-.dexter{
-	order:4;
-	display: flex;
-	width: 100%;
-	background-color: #0d0d0d;
-	padding-bottom: 3em;
-	align-items: center;
-	justify-content: center
-}
-.dexter img{
-	padding-left: 10em;
-	width: 50%;
-}
 img{
 	border: 1em;
 	display: flex;
@@ -174,10 +81,107 @@ nav a{
 }
 input:checked ~ nav{
 	top: 5em;
-	}
+}
+/*##################header#####################*/
+header{
+	margin-top: 20em;
+	order:2;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+	border-bottom: 10em solid #0d0d0d;
+	border-top: 2em solid #0d0d0d;
+}
+header a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+header a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
+/*##################gluggar á forsiðu#####################*/
 
+/*##################seinni gluggi#####################*/
+.alpha{
+	padding-bottom: 3em;
+	width: 100%;
+	order:3;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+.alpha a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+.alpha a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
+/*##################þriðji#####################*/
+.bravo{
+	padding-bottom: 3em;
+	width: 100%;
 
+	order:5;
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+.bravo a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+.bravo a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
+}
+/*##################fjorði#####################*/
+.charlie{
+	order:4;
+	display: flex;
+	width: 100%;
+	background-color: #0d0d0d;
+	padding-bottom: 3em;
+}
+/*##################gluggar á forrit siðu#####################*/
+.delta{
+	order:4;
+	display: flex;
+	width: 100%;
+	background-color: #0d0d0d;
+	padding-bottom: 3em;
+	align-items: center;
+	justify-content: center
+}
+.delta img{
+	padding-left: 10em;
+	width: 50%;
+}
 
+/*##################stærðar breytingar#####################*/
 @media screen and (min-width: 30em)  {
 
 }
