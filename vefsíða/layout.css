@@ -7,7 +7,6 @@ body {
     background-image: url('tree.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 header,footer,nav{width: 100%;}
 
@@ -23,6 +22,19 @@ header{
 	text-align: center;
 	border-bottom: 10em solid #0d0d0d;
 	border-top: 2em solid #0d0d0d;
+}
+header a{
+	font-size: 1.5em;
+	transition-duration: 1s;
+	text-decoration: none;
+	color: white;
+	border-bottom: 1px solid #0d0d0d;
+	border-top: 1px solid #0d0d0d;
+}
+header a:hover{
+	border-bottom: 1px solid #808080;
+	border-top: 1px solid #808080;
+	background-color: #1a1a1a;
 }
 .alpha{
 	padding-bottom: 3em;
@@ -77,6 +89,19 @@ header{
 	width: 100%;
 	background-color: #0d0d0d;
 	padding-bottom: 3em;
+}
+.dexter{
+	order:4;
+	display: flex;
+	width: 100%;
+	background-color: #0d0d0d;
+	padding-bottom: 3em;
+	align-items: center;
+	justify-content: center
+}
+.dexter img{
+	padding-left: 10em;
+	width: 50%;
 }
 img{
 	border: 1em;
@@ -142,6 +167,10 @@ nav li{
 	padding: 1em;
 	transition-duration: 1s;
 	border-bottom: 1px solid #0d0d0d;
+}
+nav a{
+	color: white;
+	text-decoration: none;
 }
 input:checked ~ nav{
 	top: 5em;
