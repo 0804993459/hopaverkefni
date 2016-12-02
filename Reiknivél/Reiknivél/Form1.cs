@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Reiknivél
 {
@@ -23,6 +24,7 @@ namespace Reiknivél
         double Reikning = 0;
         double tala1 = 0, tala2 = 0;
         double memorie = 0;
+        string tempdel = null;
         private void bt1_Click(object sender, EventArgs e)
         {
             rtbUtskrá.Text += "1";
@@ -90,7 +92,10 @@ namespace Reiknivél
 
         private void btDel_Click(object sender, EventArgs e)
         {
-            
+            tempdel = input.Substring(0, (input.Length - 1));
+            input = tempdel;
+            rtbUtskrá.Clear();
+            rtbUtskrá.Text = input;
         }
 
         private void btCE_Click(object sender, EventArgs e)
@@ -106,6 +111,12 @@ namespace Reiknivél
             input = null;
             adferd = "+";
             
+        }
+
+        private void btKomma_Click(object sender, EventArgs e)
+        {
+            rtbUtskrá.Text += ",";
+            input += ",";
         }
 
         private void btReikna_Click(object sender, EventArgs e)
@@ -220,6 +231,42 @@ namespace Reiknivél
         {
             memorie = memorie + Convert.ToDouble(input);
 
+        }
+
+        private void btMminus_Click(object sender, EventArgs e)
+        {
+            memorie = memorie - Convert.ToDouble(input);
+        }
+
+        private void btMresult_Click(object sender, EventArgs e)
+        {
+            rtbUtskrá.Clear();
+            rtbUtskrá.Text = memorie.ToString();
+        }
+
+        private void btSkraitextaskra_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                StreamWriter skrifari = File.AppendText("Textskra.txt");
+                skrifari.WriteLine(firsthluta + " " + adferd + " " + seinnihluta + " = " + Reikning);
+                skrifari.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ekki tókst að opna skránna" + ex);
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            File.Delete("Textskra.txt");
+            BuaTilSkra();
+        }
+        private void BuaTilSkra()
+        {
+            StreamWriter Skrifari = new StreamWriter("Textskra.txt");
+            Skrifari.Close();
         }
 
         

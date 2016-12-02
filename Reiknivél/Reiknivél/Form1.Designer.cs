@@ -84,6 +84,7 @@
             this.btMminus.TabIndex = 2;
             this.btMminus.Text = "M-";
             this.btMminus.UseVisualStyleBackColor = true;
+            this.btMminus.Click += new System.EventHandler(this.btMminus_Click);
             // 
             // btMresult
             // 
@@ -93,6 +94,7 @@
             this.btMresult.TabIndex = 3;
             this.btMresult.Text = "MR";
             this.btMresult.UseVisualStyleBackColor = true;
+            this.btMresult.Click += new System.EventHandler(this.btMresult_Click);
             // 
             // btDel
             // 
@@ -152,6 +154,7 @@
             this.btKomma.TabIndex = 9;
             this.btKomma.Text = ",";
             this.btKomma.UseVisualStyleBackColor = true;
+            this.btKomma.Click += new System.EventHandler(this.btKomma_Click);
             // 
             // btProsent
             // 
@@ -181,6 +184,7 @@
             this.btSkraitextaskra.TabIndex = 12;
             this.btSkraitextaskra.Text = "Skrá í textaskrá";
             this.btSkraitextaskra.UseVisualStyleBackColor = true;
+            this.btSkraitextaskra.Click += new System.EventHandler(this.btSkraitextaskra_Click);
             // 
             // bt8
             // 
@@ -356,6 +360,7 @@
             this.Controls.Add(this.rtbUtskrá);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
