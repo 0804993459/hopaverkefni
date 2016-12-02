@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Reiknivél
 {
@@ -243,6 +244,30 @@ namespace Reiknivél
             rtbUtskrá.Text = memorie.ToString();
         }
 
+        private void btSkraitextaskra_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                StreamWriter skrifari = File.AppendText("Textskra.txt");
+                skrifari.WriteLine(firsthluta + " " + adferd + " " + seinnihluta + " = " + Reikning);
+                skrifari.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ekki tókst að opna skránna" + ex);
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            File.Delete("Textskra.txt");
+            BuaTilSkra();
+        }
+        private void BuaTilSkra()
+        {
+            StreamWriter Skrifari = new StreamWriter("Textskra.txt");
+            Skrifari.Close();
+        }
 
         
 

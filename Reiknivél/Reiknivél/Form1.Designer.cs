@@ -184,6 +184,7 @@
             this.btSkraitextaskra.TabIndex = 12;
             this.btSkraitextaskra.Text = "Skrá í textaskrá";
             this.btSkraitextaskra.UseVisualStyleBackColor = true;
+            this.btSkraitextaskra.Click += new System.EventHandler(this.btSkraitextaskra_Click);
             // 
             // bt8
             // 
@@ -359,6 +360,7 @@
             this.Controls.Add(this.rtbUtskrá);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
