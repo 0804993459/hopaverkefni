@@ -182,6 +182,8 @@ header a:hover{
 	width: 50%;
 }
 /*##################gluggar á okkur siðu#####################*/
+
+/*##################seinni gluggi#####################*/
 .echo{
 	padding-bottom: 3em;
 	width: 50%;
@@ -206,6 +208,7 @@ header a:hover{
 	border-top: 1px solid #808080;
 	background-color: #1a1a1a;
 }
+/*##################þriðji#####################*/
 .foxtrot{
 	padding-bottom: 3em;
 	width: 50%;
@@ -230,6 +233,7 @@ header a:hover{
 	border-top: 1px solid #808080;
 	background-color: #1a1a1a;
 }
+/*##################fjorði#####################*/
 .golf{
 	padding-bottom: 3em;
 	width: 50%;
@@ -241,6 +245,7 @@ header a:hover{
 	color: white;
 	text-align: center;
 }
+/*##################fimti#####################*/
 .hotel{
 	padding-bottom: 25em;
 	width: 50%;
@@ -252,6 +257,21 @@ header a:hover{
 	color: white;
 	text-align: center;
 }
+/*##################gluggar á ferril siðu#####################*/
+
+/*##################seinni gluggi#####################*/
+.india{
+	padding-bottom: 25em;
+	width: 1000%;
+
+	order:5;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #0d0d0d;
+	color: white;
+	text-align: center;
+}
+
 /*##################stærðar breytingar#####################*/
 @media screen and (min-width: 30em)  {
 
